@@ -9,7 +9,9 @@
     "gh-pages-deploy": "node scripts/gh-pages-deploy.js"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "core-js": "^3.6.5",
+    "cosmicjs": "^3.4.0",
     "vue": "^2.6.11"
   },
   "devDependencies": {
