@@ -1,3 +1,7 @@
 module.exports = {
-  publicPath: '/portfolio_vue/'
+  publicPath: '/portfolio_vue/',
+
+  transpileDependencies: [
+    'vuetify'
+  ]
 }
