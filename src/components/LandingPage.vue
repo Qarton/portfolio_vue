@@ -2,8 +2,8 @@
   <section id="hero">
         <v-row no-gutters>
           <v-img
-            :min-height="'calc(100vh - ' + $vuetify.application.top + 'px)'"
-            src="../assets/img/bg.jpg"
+            :min-height="'100vh'"
+            src="../assets/img/bg2.jpg"
           >
             <v-theme-provider dark>
               <v-container fill-height>

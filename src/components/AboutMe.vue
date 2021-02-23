@@ -1,7 +1,5 @@
 <template>
   <section id="about-me">
-        <div class="py-12"></div>
-
         <v-container class="text-center">
           <h2 class="display-2 font-weight-bold mb-3">ABOUT ME</h2>
 
@@ -13,17 +11,19 @@
 
             <v-divider></v-divider>
           </v-responsive>
-
-          <v-avatar
-            class="elevation-12 mb-12"
-            size="128"
-          >
-            <v-img src="../assets/img/Math.jpg"></v-img>
-          </v-avatar>
+          <v-scroll-x-reverse-transition>
+            <v-avatar
+              class="elevation-12 mb-12"
+              size="128"
+            >
+              <v-img src="../assets/img/Math.jpg"></v-img>
+            </v-avatar>
+          </v-scroll-x-reverse-transition>
 
           <v-row>
             <v-col>
-            {{content.metadata.pres_first}}
+              <h3>{{ content.metadata.pres_title }}</h3>
+              {{content.metadata.pres_first}}
             </v-col>
 
             <v-col>
@@ -38,8 +38,6 @@
           </v-row>
 
         </v-container>
-
-        <div class="py-12"></div>
       </section>
 </template>
 

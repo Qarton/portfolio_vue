@@ -1,22 +1,32 @@
 <template>
   <v-app>
-    <v-main>
+    <v-main v-if="isLoaded">
       <landing-page :msg="user.name"/>
+      <div class="py-16"></div>
       <about-me :user="user" :content="findSlug('description')" />
+      <div class="py-16"></div>
+      <experience :content="findSlug('experiences')" />
+      <div class="py-12"></div>
+      <skills :content="findSlug('skills')" />
     </v-main>
   </v-app>
 </template>
 
 <script>
 import LandingPage from './components/LandingPage'
-import AboutMe from './components/AboutMe';
+import AboutMe from './components/AboutMe'
+import Experience from './components/Experience'
+import Skills from './components/Skills.vue'
 
-import { bucket } from "./cosmic.js";
+import { bucket } from "./cosmic.js"
+
 export default {
   name: "App",
   components: {
     LandingPage,
-    AboutMe
+    AboutMe,
+    Experience,
+    Skills
   },
   data: () => ({
     isLoaded: false,
