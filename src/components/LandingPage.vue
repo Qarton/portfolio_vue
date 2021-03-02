@@ -1,10 +1,7 @@
 <template>
   <section id="hero">
+    <v-parallax :height="$vuetify.breakpoint.smAndDown ? 900 : 1080" src="../assets/img/bg3.jpg">
         <v-row no-gutters>
-          <v-img
-            :min-height="'100vh'"
-            src="../assets/img/bg2.jpg"
-          >
             <v-theme-provider dark>
               <v-container fill-height>
                 <v-row
@@ -46,8 +43,8 @@
                 </v-row>
               </v-container>
             </v-theme-provider>
-          </v-img>
         </v-row>
+    </v-parallax>
       </section>
 </template>
 

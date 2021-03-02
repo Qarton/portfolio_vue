@@ -1,12 +1,12 @@
 <template>
-  <v-row>
-			<v-col>
+  <v-row justify="center">
+			<v-col cols="10" md="5">
 				<experience-detail
 					:posts="content.metadata.academic"
 					title="Education"
 				/>
       </v-col>
-      <v-col>
+      <v-col cols="10" md="5">
 				<experience-detail
 					:posts="content.metadata.professional"
 					title="Professional"

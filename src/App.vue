@@ -8,6 +8,8 @@
       <experience :content="findSlug('experiences')" />
       <div class="py-12"></div>
       <skills :content="findSlug('skills')" />
+      <div class="py-12"></div>
+      <projects :content="findSlug('projects')" />
     </v-main>
   </v-app>
 </template>
@@ -17,8 +19,10 @@ import LandingPage from './components/LandingPage'
 import AboutMe from './components/AboutMe'
 import Experience from './components/Experience'
 import Skills from './components/Skills.vue'
+import Projects from './components/Projects.vue'
 
 import { bucket } from "./cosmic.js"
+
 
 export default {
   name: "App",
@@ -26,7 +30,8 @@ export default {
     LandingPage,
     AboutMe,
     Experience,
-    Skills
+    Skills,
+    Projects
   },
   data: () => ({
     isLoaded: false,

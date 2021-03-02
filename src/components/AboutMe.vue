@@ -20,20 +20,19 @@
             </v-avatar>
           </v-scroll-x-reverse-transition>
 
-          <v-row>
-            <v-col>
-              <h3>{{ content.metadata.pres_title }}</h3>
+          <v-row justify="space-around">
+            <v-col cols="10" md="4">
+              <h3 class="mb-4">{{ content.metadata.pres_title }}</h3>
               {{content.metadata.pres_first}}
             </v-col>
 
-            <v-col>
-              <h3>{{ user.name }}</h3>
+            <v-col cols="10" md="4">
+              <h3 class="mb-4">{{ user.name }}</h3>
               <div class="data"><strong>E-mail:</strong> {{ user.email }}</div>
               <div class="data"><strong>Phone:</strong> {{ user.phone }}</div>
               <div class="data"><strong>City:</strong> {{ user.city }}</div>
               <div class="data"><strong>Languages:</strong> {{ user.lang }}</div>
             </v-col>
-
 
           </v-row>
 
